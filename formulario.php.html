@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avanzada</title>
+</head>
+<body>
+
+<h1>Calculadora Avanzada</h1>
+
+<!-- Formulario para ingresar los números y seleccionar la operación -->
+<form action="calcular.php" method="post">
+    Número 1: <input type="text" name="num1" required><br>
+    Número 2: <input type="text" name="num2" required><br>
+    Operación:
+    <select name="operation" required>
+        <option value="sumar">Sumar</option>
+        <option value="restar">Restar</option>
+        <option value="multiplicar">Multiplicar</option>
+        <option value="dividir">Dividir</option>
+    </select><br><br>
+    <input type="submit" value="Calcular">
+</form>
+
+<!-- Mostrar botón para reiniciar la calculadora -->
+<form action="reset.php" method="post">
+    <input type="submit" value="Reiniciar Calculadora">
+</form>
+
+</body>
+</html>
