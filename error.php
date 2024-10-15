@@ -30,7 +30,7 @@ if (isset($_GET['error'])) {
 }
 ?>
 
-<a href="formulario.php">Volver al formulario</a>
+<a href="formulario.php.html">Volver al formulario</a>
 
 </body>
 </html>

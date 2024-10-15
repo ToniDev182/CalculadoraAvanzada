@@ -2,6 +2,7 @@
 session_start(); // Iniciar la sesión
 
 // Inicializar el historial de operaciones en sesión si no existe
+// si no existe el hitorial crea un historal
 if (!isset($_SESSION['historial'])) {
     $_SESSION['historial'] = array();
 }
@@ -92,5 +93,5 @@ $nombre_servidor = $_SERVER['SERVER_NAME'];
 echo "<p>Dirección IP del cliente: " .($ip_cliente) . "</p>";
 echo "<p>Nombre del servidor: " . ($nombre_servidor) . "</p>";
 
-echo "<a href='formulario.php'>Volver</a>"; // Enlace para volver al formulario
+echo "<a href='formulario.php.html'>Volver</a>"; // Enlace para volver al formulario
 ?>
